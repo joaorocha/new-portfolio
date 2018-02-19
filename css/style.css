@@ -38,6 +38,19 @@ body {
 	font-size: 2em;
 	text-transform: uppercase;
 }
+
+.navbar-nav li a {
+	color: #fff !important;
+	-webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+
+.navbar-nav li a:hover {
+	color: #C9F9DD !important;
+}
 /***MENU***/
 
 
@@ -51,4 +64,9 @@ body {
 
 
 /***FOOTER***/
+footer {
+	background: url(../img/pattern-hash.png) top left repeat;
+	background-color: #272123;
+	border-top: 6px solid #d0d0d0;
+}
 /***FOOTER***/
