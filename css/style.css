@@ -1,0 +1,54 @@
+/***
+Author: João Victor Rocha Melo;
+E-mail: joao.rochamelo1993@gmail.com;
+Date: 15/02/2018;
+Site: ;
+***/
+
+/***GENERAL***/
+@font-face {
+    font-family: League Gothic;
+    src: url("../fonts/LeagueGothic-Regular.otf") format("opentype");
+}
+
+body {
+	background: url(../img/pattern-noise.png) top left repeat;
+	background-position: top left;
+	font-family: "League Gothic", sans-serif;
+	height: 100000px;
+}
+/***GENERAL***/
+
+
+/***ADJUSTS***/
+/***ADJUSTS***/
+
+
+/***HEADER***/
+/***HEADER***/
+
+
+/***MENU***/
+.navbar {
+	background: url(../img/pattern-hash.png) top left repeat;
+	background-color: #272123;
+	border-top: 6px solid #d0d0d0;
+	border-bottom: 6px solid #d0d0d0;
+	box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+	font-size: 2em;
+	text-transform: uppercase;
+}
+/***MENU***/
+
+
+/***JOBS***/
+
+/***JOBS***/
+
+
+/***SKILLS***/
+/***SKILLS***/
+
+
+/***FOOTER***/
+/***FOOTER***/
