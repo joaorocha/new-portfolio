@@ -93,13 +93,13 @@
                 </div>
                 <div class="row my-3">
                     <div class="col-4">
-                        Skill 1
+                        <div id="skill1" class="skill"></div>
                     </div>
                     <div class="col-4">
-                        Skill 2
+                        <div id="skill2" class="skill"></div>
                     </div>
                     <div class="col-4">
-                        Skill 3
+                        <div id="skill3" class="skill"></div>
                     </div>
                 </div>
             </div><!--END SKILLS-->
@@ -127,5 +127,67 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/progressbar.min.js"></script>
+        <script type="text/javascript">
+            var bar = new ProgressBar.Circle(skill1, {
+              color: '#d9593d',
+              trailColor: '#e8e8e8',
+              trailWidth: 6,
+              text: {
+                value:'HTML',
+              },
+              duration: 1400,
+              easing: 'bounce',
+              strokeWidth: 6,
+              from: {color: '#b0442c', a:0},
+              to: {color: '#d9593d', a:1},
+              // Set default step function for all animate calls
+              step: function(state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+              }
+            });
+
+            bar.animate(0.5);  // Number from 0.0 to 1.0
+
+            var bar = new ProgressBar.Circle(skill2, {
+              color: '#86A894',
+              trailColor: '#e8e8e8',
+              trailWidth: 6,
+              text: {
+                value:'CSS',
+              },
+              duration: 1400,
+              easing: 'bounce',
+              strokeWidth: 6,
+              from: {color: '#4b6054', a:0},
+              to: {color: '#89ae99', a:1},
+              // Set default step function for all animate calls
+              step: function(state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+              }
+            });
+
+            bar.animate(0.8);  // Number from 0.0 to 1.0
+
+            var bar = new ProgressBar.Circle(skill3, {
+              color: '#51454a',
+              trailColor: '#e8e8e8',
+              trailWidth: 6,
+              text: {
+                value:'BOOTSTRAP',
+              },
+              duration: 1400,
+              easing: 'bounce',
+              strokeWidth: 6,
+              from: {color: '#332b2e', a:0},
+              to: {color: '#51454a', a:1},
+              // Set default step function for all animate calls
+              step: function(state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+              }
+            });
+
+            bar.animate(0.6);  // Number from 0.0 to 1.0
+        </script>
   </body>
 </html>
