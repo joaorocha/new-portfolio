@@ -15,7 +15,15 @@ body {
 	background: url(../img/pattern-noise.png) top left repeat;
 	background-position: top left;
 	font-family: "League Gothic", sans-serif;
-	height: 100000px;
+	/*height: 100000px;*/
+}
+
+.section-title {
+	color: #d9593d;
+}
+
+.section-title h2 {
+	font-size: 2.5rem
 }
 /***GENERAL***/
 
@@ -37,6 +45,8 @@ body {
 	box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 	font-size: 2em;
 	text-transform: uppercase;
+	-webkit-backface-visibility: hidden !important;
+    top: -1px;
 }
 
 .navbar-nav li a {
@@ -51,15 +61,37 @@ body {
 .navbar-nav li a:hover {
 	color: #C9F9DD !important;
 }
+
+.logo {
+	position: absolute;
+    top: -30px;
+}
+
+.text-menu {
+    color: #d9593d;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 125px;
+}
+
+.color-light {
+	color: #C9F9DD
+}
 /***MENU***/
 
 
 /***JOBS***/
-
+#jobs {
+	padding: 50px 0px;
+}
 /***JOBS***/
 
 
 /***SKILLS***/
+#skills {
+	padding: 50px 0px;
+}
+
 .skill {
     width: 100%;
     /* height: 200px; */
@@ -90,5 +122,234 @@ footer {
 	background: url(../img/pattern-hash.png) top left repeat;
 	background-color: #272123;
 	border-top: 6px solid #d0d0d0;
+	padding: 50px 0px;
+}
+
+.about p {
+	color: #fff;
+	text-align: justify;
+	font-size: 1.3em;
+}
+
+.about h3,
+.contact h3,
+.social h3 {
+	text-transform: uppercase;
+	color: #d9593d;
+}
+
+.contact-label {
+	color: #fff;
+}
+
+.email-input,
+.message-field {
+	background-color: #fffee9;
+}
+
+.contact-btn {
+	background-color: #d9593d;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 60px;
+    border: none;
+    font-size: 1.3em;
+}
+
+.social-icon {
+
+	background-color: #443a3e;
+  	padding: 7px 7px;	
+  	border-radius: 50%;
+  	color: #ffffff;
+  	font-size: 1.5em;
+  	display: inline-block;
+}
+
+.social-icon i {
+  	background-color: #67585e;
+  	border: 1px solid #8e7e7e;
+  	border-radius: 50%;
+  	color: #383033;
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+.social-icon i:hover {
+  	transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	-webkit-transform: scale(1.1);
+}
+
+.fb-icon {
+  	padding: 20px 25px;
+}
+
+.li-icon {
+  	padding: 20px 21px;
+}
+
+.gp-icon {
+  	padding: 20px 21px;
 }
 /***FOOTER***/
+
+
+
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+/*	padding: 1em 0 4em;
+	max-width: 1000px;*/
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	/*margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;*/
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Individual effects */
+
+
+/*-----------------*/
+/***** Apollo *****/
+/*-----------------*/
+
+figure.effect-apollo {
+	background: #272123;
+}
+
+figure.effect-apollo img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect-apollo p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2em;
+    padding: 0 .5em;
+    max-width: 150px;
+    border-right: 4px solid #fff;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    font-size: .8em;
+}
+
+figure.effect-apollo h2 {
+	text-align: left;
+}
+
+figure.effect-apollo:hover img {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.effect-apollo:hover p {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
