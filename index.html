@@ -78,7 +78,7 @@
                                 <img src="img/22.jpg" alt="img18"/>
                                 <figcaption>
                                     <h2>Strong <span>Apollo</span></h2>
-                                    <p>Apollo's last game of pool was so strange.</p>
+                                    <p>Wordpress<br>Responsive<br>Web Design<br>E-Commerce</p>
                                     <a href="#">View more</a>
                                 </figcaption>           
                             </figure>
@@ -90,9 +90,9 @@
                                 <img src="img/18.jpg" alt="img18"/>
                                 <figcaption>
                                     <h2>Strong <span>Apollo</span></h2>
-                                    <p>Apollo's last game of pool was so strange.</p>
+                                    <p>Wordpress<br>Responsive<br>Web Design<br>E-Commerce</p>
                                     <a href="#">View more</a>
-                                </figcaption>           
+                                </figcaption>          
                             </figure>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                                 <img src="img/18.jpg" alt="img18"/>
                                 <figcaption>
                                     <h2>Strong <span>Apollo</span></h2>
-                                    <p>Apollo's last game of pool was so strange.</p>
+                                    <p>Wordpress<br>Responsive<br>Web Design<br>E-Commerce</p>
                                     <a href="#">View more</a>
                                 </figcaption>           
                             </figure>
@@ -115,7 +115,7 @@
                                 <img src="img/22.jpg" alt="img18"/>
                                 <figcaption>
                                     <h2>Strong <span>Apollo</span></h2>
-                                    <p>Apollo's last game of pool was so strange.</p>
+                                    <p>Wordpress<br>Responsive<br>Web Design<br>E-Commerce</p>
                                     <a href="#">View more</a>
                                 </figcaption>           
                             </figure>
@@ -127,7 +127,7 @@
                                 <img src="img/18.jpg" alt="img18"/>
                                 <figcaption>
                                     <h2>Strong <span>Apollo</span></h2>
-                                    <p>Apollo's last game of pool was so strange.</p>
+                                    <p>Wordpress<br>Responsive<br>Web Design<br>E-Commerce</p>
                                     <a href="#">View more</a>
                                 </figcaption>           
                             </figure>
@@ -206,6 +206,20 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/progressbar.min.js"></script>
         <script type="text/javascript">
+            var dino = $('#skills').offset().top;
+            var isActive = true;
+
+            $(window).scroll(function(){
+                
+
+                if($(window).scrollTop() >= (dino - 300) && isActive){
+                    bar.animate(0.6);
+                    bar2.animate(0.8);
+                    bar3.animate(0.6);
+                    isActive = false;
+                }
+            })
+
             var bar = new ProgressBar.Circle(skill1, {
               color: '#d9593d',
               trailColor: '#e8e8e8',
@@ -224,9 +238,7 @@
               }
             });
 
-            bar.animate(0.5);  // Number from 0.0 to 1.0
-
-            var bar = new ProgressBar.Circle(skill2, {
+            var bar2 = new ProgressBar.Circle(skill2, {
               color: '#86A894',
               trailColor: '#e8e8e8',
               trailWidth: 6,
@@ -244,9 +256,7 @@
               }
             });
 
-            bar.animate(0.8);  // Number from 0.0 to 1.0
-
-            var bar = new ProgressBar.Circle(skill3, {
+            var bar3 = new ProgressBar.Circle(skill3, {
               color: '#51454a',
               trailColor: '#e8e8e8',
               trailWidth: 6,
@@ -264,7 +274,7 @@
               }
             });
 
-            bar.animate(0.6);  // Number from 0.0 to 1.0
+
         </script>
         
   </body>
