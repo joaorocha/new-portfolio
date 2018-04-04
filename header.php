@@ -8,6 +8,9 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <!--Animate.css-->
+        <link rel="stylesheet" href="css/animate.css">
+
         <!--Main CSS-->
         <link rel="stylesheet" href="css/style.css">
 
@@ -20,14 +23,14 @@
     </head>
     <body>
         <!--HEADER-->
-        <header>
+        <header id="header">
             <!-- <img src="img/main-header.jpg" class="img-fluid"> -->
         </header><!--END HEADER-->
 
         <!--MENU-->
         <nav class="navbar sticky-top navbar-light navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand smooth-scroll" href="index.php#header">
                     <img src="img/logo.png" width="134" height="134" alt="" class="logo">
                   </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +40,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="work.php">WORK <span class="sr-only">(current)</span></a>
+                            <a class="nav-link smooth-scroll" href="index.php#jobs">WORK <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link smooth-scroll" href="#footer">SAY HELLO!</a>
                         </li>
                     </ul>
                 </div>

@@ -27,6 +27,11 @@ body {
 .section-title h2 {
 	font-size: 2.5rem
 }
+
+.subtitle {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: .9em;
+}
 /***GENERAL***/
 
 
@@ -82,7 +87,7 @@ header {
     color: #d9593d;
     margin: 0px;
     padding: 0px;
-    margin-left: 125px;
+    margin-left: 140px;
 }
 
 .color-light {
@@ -93,7 +98,7 @@ header {
 
 /***JOBS***/
 #jobs {
-	padding: 50px 0px;
+	padding: 100px 0px 0px 0px;
 }
 
 	/***SINGLE WORK***/
@@ -162,8 +167,10 @@ footer {
 
 .about p {
 	color: #fff;
-	text-align: justify;
-	font-size: 1.3em;
+    text-align: justify;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3em;
 }
 
 .about h3,
@@ -175,11 +182,15 @@ footer {
 
 .contact-label {
 	color: #fff;
+    font-size: 1.3em;
+    line-height: 0em;
 }
 
 .email-input,
 .message-field {
 	background-color: #fffee9;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8em;
 }
 
 .contact-btn {
@@ -213,6 +224,7 @@ footer {
 }
 
 .social-icon i:hover {
+	color: #fff;
   	transform: scale(1.1);
   	-ms-transform: scale(1.1);
   	-webkit-transform: scale(1.1);

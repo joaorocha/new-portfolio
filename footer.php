@@ -39,9 +39,13 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
         <script type="text/javascript" src="js/progressbar.min.js"></script>
         <script type="text/javascript">
             var dino = $('#skills').offset().top;
@@ -51,9 +55,9 @@
                 
 
                 if($(window).scrollTop() >= (dino - 320) && isActive){
-                    bar.animate(0.6);
-                    bar2.animate(0.8);
-                    bar3.animate(0.6);
+                    bar.animate(0.85);
+                    bar2.animate(0.75);
+                    bar3.animate(0.9);
                     isActive = false;
                 }
             })
@@ -63,7 +67,7 @@
               trailColor: '#e8e8e8',
               trailWidth: 6,
               text: {
-                value:'HTML',
+                value:'HTML5',
               },
               duration: 1400,
               easing: 'bounce',
@@ -81,7 +85,7 @@
               trailColor: '#e8e8e8',
               trailWidth: 6,
               text: {
-                value:'CSS',
+                value:'CSS3',
               },
               duration: 1400,
               easing: 'bounce',
@@ -111,6 +115,21 @@
                 circle.path.setAttribute('stroke', state.color);
               }
             });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script type="text/javascript">
+            $('a.smooth-scroll[href*="#"]:not([href="#"])').click(function() {
+              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            }); 
         </script>
         
   </body>
