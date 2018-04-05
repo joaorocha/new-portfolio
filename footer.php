@@ -2,14 +2,14 @@
         <footer id="footer">
             <div class="container">
                 <div class="row my-3">
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4">
                         <div class="about">
                             <h3>About me</h3>
                             <p>My name is João Victor Rocha. I'm 25, front-end, web designer and developer based on Brazil's capital. Graduated on Computer Science currently working as freelancer.</p>
                             <p>I'm always trying to make new projects, improve my criativity and learn more about The new web standards to keep myself well informed about it.</p>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 my-3 my-lg-0">
                         <div class="contact">
                             <h3>Say Hello!</h3>
                             <form>
@@ -26,7 +26,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4">
                         <div class="social">
                             <h3>Follow me</h3>
                             <a href="" class="social-icon"><i class="fab fa-facebook-f fb-icon"></i></a>
@@ -131,6 +131,10 @@
               }
             }); 
         </script>
-        
+        <script type="text/javascript">
+          $('.navbar-nav>li>a').on('click', function(){
+              $('.navbar-collapse').collapse('hide');
+          });
+        </script>
   </body>
 </html>

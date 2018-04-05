@@ -30,13 +30,14 @@
         <!--MENU-->
         <nav class="navbar sticky-top navbar-light navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand smooth-scroll" href="index.php#header">
+                <h2 class="text-menu-mobile d-block d-sm-none"><span class="color-light">João Rocha</span> UX/UI "Merc' with a mouth" designer</h2>
+                <a class="navbar-brand smooth-scroll d-none d-sm-block" href="index.php#header">
                     <img src="img/logo.png" width="134" height="134" alt="" class="logo">
                   </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <h2 class="text-menu"><span class="color-light">João Rocha</span> UX/UI "Merc' with a mouth" designer</h2>
+                <h2 class="text-menu d-none d-sm-block"><span class="color-light">João Rocha</span> UX/UI "Merc' with a mouth" designer</h2>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
