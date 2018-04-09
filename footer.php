@@ -2,13 +2,16 @@
         <footer id="footer">
             <div class="container">
                 <div class="row my-3">
+                    <!--ABOUT-->
                     <div class="col-12 col-lg-4">
                         <div class="about">
                             <h3>About me</h3>
                             <p>My name is João Victor Rocha. I'm 25, front-end, web designer and developer based on Brazil's capital. Graduated on Computer Science currently working as freelancer.</p>
                             <p>I'm always trying to make new projects, improve my criativity and learn more about The new web standards to keep myself well informed about it.</p>
                         </div>
-                    </div>
+                    </div><!--END ABOUT-->
+
+                    <!--SAY HELLO-->
                     <div class="col-12 col-lg-4 my-3 my-lg-0">
                         <div class="contact">
                             <h3>Say Hello!</h3>
@@ -25,28 +28,34 @@
                                 <button type="submit" class="btn btn-light contact-btn">Enviar</button> 
                             </form>
                         </div>
-                    </div>
+                    </div><!--END SAY HELLO-->
+
+                    <!--FOLLOW ME-->
                     <div class="col-12 col-lg-4">
                         <div class="social">
                             <h3>Follow me</h3>
                             <a href="" class="social-icon"><i class="fab fa-facebook-f fb-icon"></i></a>
                             <a href="" class="social-icon"><i class="fab fa-linkedin-in li-icon"></i></a>
                         </div>
-                    </div>
+                    </div><!--END FOLLOW ME-->
+
                 </div>
             </div>
         </footer><!--END FOOTER-->
 
-        <!-- Optional JavaScript -->
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="js/wow.min.js"></script>
+        
+        <!--WOW JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script>
             new WOW().init();
         </script>
-        <script type="text/javascript" src="js/progressbar.min.js"></script>
+        <!--CIRCULAR ANIMATED PROGRESSBARS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
         <script type="text/javascript">
             var dino = $('#skills').offset().top;
             var isActive = true;
@@ -116,6 +125,7 @@
               }
             });
         </script>
+        <!--JQuery Easing FOR SMOOTH SCROLLING-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script type="text/javascript">
             $('a.smooth-scroll[href*="#"]:not([href="#"])').click(function() {
@@ -131,6 +141,7 @@
               }
             }); 
         </script>
+        <!--SCRIPT TO CLOSE MENU ITENS ON CLICK (MOBILE)-->
         <script type="text/javascript">
           $('.navbar-nav>li>a').on('click', function(){
               $('.navbar-collapse').collapse('hide');

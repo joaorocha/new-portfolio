@@ -6,18 +6,17 @@ Site: ;
 ***/
 
 /***GENERAL***/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
 @font-face {
     font-family: League Gothic;
     src: url("../fonts/LeagueGothic-Regular.otf") format("opentype");
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
-
 body {
 	background: url(../img/pattern-noise.png) top left repeat;
 	background-position: top left;
 	font-family: "League Gothic", sans-serif;
-	/*height: 100000px;*/
 }
 
 .section-title {
@@ -93,6 +92,12 @@ header {
 .color-light {
 	color: #C9F9DD
 }
+
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: rgba(0,0,0,.1);
+    background-color: #fffee9;
+}
 /***MENU***/
 
 
@@ -121,6 +126,16 @@ header {
 		.work-redirects a:hover {
 			background-color: #d46e58;
     		color: #313131 !important;
+		}
+
+		.btn-redirects {
+			background-color: #d9593d;
+			width: 100%;
+			text-transform: uppercase;
+		}
+
+		.btn-redirects i{
+			margin-right: .3em;
 		}
 	/***SINGLE WORK***/
 
@@ -245,7 +260,7 @@ footer {
 
 
 
-
+/***CODROPS EFFECT CODE***/
 .grid {
 	position: relative;
 	clear: both;
@@ -401,6 +416,8 @@ figure.effect-apollo:hover p {
 	transition-delay: 0.1s;
 }
 
+/***CODROPS EFFECT CODE***/
+
 
 /*==================================================
 =               Media Queries                     =
@@ -483,6 +500,12 @@ figure.effect-apollo:hover p {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1920px) {
+	header {
+	    min-height: 800px;
+	}
 
+	#jobs {
+		padding: 100px 0px 0px 0px;
+	}
 
 }
